@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: spring-cloud-itoken-service-admin
+  boot:
+    admin:
+      client:
+        url: localhost:8084
+  zipkin:
+    base-url: localhost:9411
+thymeleaf:
+  cache: false
+  mode: LEGACYHTML5
+  encoding: UTF-8
+  servlet:
+    content-type: text/html
+
+server:
+  port: 8501
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/,http://localhost:8861/eureka/,http://localhost:8961/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
