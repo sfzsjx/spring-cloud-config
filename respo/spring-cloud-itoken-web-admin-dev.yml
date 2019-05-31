@@ -7,13 +7,14 @@ spring:
         service-base-url: http://localhost:8084
   zipkin:
     base-url: http://localhost:9411
-
-thymeleaf:
+  thymeleaf:
   cache: false
   mode: LEGACYHTML5
   encoding: UTF-8
   servlet:
     content-type: text/html
+
+
 
 server:
   port: 8501
