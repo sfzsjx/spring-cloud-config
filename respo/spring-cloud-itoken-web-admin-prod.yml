@@ -17,6 +17,10 @@ thymeleaf:
 server:
   port: 8501
 
+fegin:
+  hystrix:
+    enable: true
+
 
 eureka:
   client:
