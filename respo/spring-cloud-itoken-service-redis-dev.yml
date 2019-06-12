@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: spring-cloud-itoken-service-redis
+
+server:
+  port: 8502
